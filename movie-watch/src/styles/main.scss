@@ -1,0 +1,14 @@
+// Main Stylesheet
+
+// Google Fonts - Import
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Roboto:400,400i,700,700i&display=swap');
+
+// Partial Imports
+
+// Settings
+@import './base/reset';
+@import './base/settings';
+@import './base/type';
+
+// Components
+@import './components/home';
