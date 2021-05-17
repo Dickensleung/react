@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {APP_FOLDER_NAME} from '../global/Variables';
 import Home from '../components/Home';
 import SingleMovie from '../components/SingleMovie';
+import Header from '../components/Header';
 
 export default function AppRouter(){
     return(
         <Router basename={APP_FOLDER_NAME}>
             <div className="wrapper">
+                    <Header />
                 <Switch>
                     <Route path="/" exact><Home /></Route>
                     <Route path="/index.html" exact><Home /></Route>
