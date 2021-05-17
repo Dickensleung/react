@@ -23,8 +23,6 @@ class Nav extends Component {
                                         {item.title}
                                     </NavLink>
                                 </form>          
-                                
-                                
                             )
                         })}
                     </div>

@@ -12,8 +12,6 @@ const Header = () =>{
 			<h1 class="page-title">
 				Movie-Watch.
 			</h1>
-			
-            <Nav />
 		
 		</header>
 	

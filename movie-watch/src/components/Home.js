@@ -45,6 +45,9 @@ const Home = () => {
     return (
         <main>
             <section>
+            <Nav 
+                nav={nav}
+                handleChange={handleChange}/>
             <Year
                 year={year}
                 handleChangeYear={handleChangeYear} />
@@ -53,9 +56,6 @@ const Home = () => {
                 chart={chart}
                 handleChangeChart={handleChangeChart} />
             </section>
-            <Nav 
-                nav={nav}
-                handleChange={handleChange}/>
             
             {JSON.stringify(movieData).length > 2 ? (
                 <section className="movie-database">
