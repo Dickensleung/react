@@ -5,6 +5,7 @@ import MovieGrid from './MovieGrid';
 import Chart from './Chart';
 import Year from './Year';
 import '../styles/main.scss';
+import Nav from './Nav';
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
     const [chart, setChart] = useState('popular');
     // set the variables that we want react to keep track of 
     const [movieData, setMovieData] = useState(null);
+    const [nav, setNav] = useState('home');
 
     // [call back, when do we want the call back?]
     useEffect(() => {
@@ -36,6 +38,9 @@ const Home = () => {
     const handleChangeChart = (chart) => {
         setChart(chart);
     }
+    const handleChange = (nav) => {
+        setNav(nav);
+    }
 
     return (
         <main>
@@ -48,6 +53,9 @@ const Home = () => {
                 chart={chart}
                 handleChangeChart={handleChangeChart} />
             </section>
+            <Nav 
+                nav={nav}
+                handleChange={handleChange}/>
             
             {JSON.stringify(movieData).length > 2 ? (
                 <section className="movie-database">
