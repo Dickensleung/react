@@ -7,7 +7,7 @@ export const navItems = [
     {
         title: 'About',
         url: '/about',
-        cName: 'nav-links',
+        cName: 'nav-links', 
     },
     {
         title: 'Favourites',
